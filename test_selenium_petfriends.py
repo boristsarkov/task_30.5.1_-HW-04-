@@ -19,9 +19,9 @@ def driver():
 def test_show_all_pets(driver):
     # Вводим email
     images_sum = 0
-    driver.find_element(By.ID, 'email').send_keys('boristsarkov@gmail.com')
+    driver.find_element(By.ID, 'email').send_keys('<your email>')
     # Вводим пароль
-    driver.find_element(By.ID, 'pass').send_keys('Anastasi@1992')
+    driver.find_element(By.ID, 'pass').send_keys('<your password>')
     # Нажимаем на кнопку входа в аккаунт
     driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]').click()
     # При небольшом размере окна есть кнопка открывающая пункты меню, нажимаем на нее
